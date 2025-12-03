@@ -15,6 +15,28 @@ This platform serves as a reference implementation for organizations building mi
 
 ## Platform Services
 
+### 📚 [Bookstore Service](iqscaffold-bookstore-service/README.md)
+
+Domain service demonstrating catalog and inventory management with DDD patterns.
+
+**Core Capabilities:**
+
+- Book catalog management with rich domain models
+- Inventory tracking with reservations
+- Multi-criteria search and filtering
+- Stock level monitoring with low-stock alerts
+- Admin operations with audit trail
+
+**Key Patterns:**
+
+- Domain-Driven Design with value objects (ISBN, Money, BookId)
+- Aggregate roots with business logic (Book, Category, Inventory)
+- Factory methods for object creation
+- Repository and service layers with clear boundaries
+- Cache-aside pattern with Redis
+- Optimistic locking for concurrency
+- Modular package structure (catalog, inventory, shared)
+
 ### 🔐 [User Service](iqscaffold-user-service/README.md)
 
 Centralized authentication and identity management hub.
@@ -58,28 +80,6 @@ Reactive API gateway providing unified entry point for all services.
 - Request/response transformation with GlobalFilter chain
 - API versioning (path and header-based)
 - Type-safe configuration with Java records (IqScaffoldProperties)
-
-### 📚 [Bookstore Service](iqscaffold-bookstore-service/README.md)
-
-Domain service demonstrating catalog and inventory management with DDD patterns.
-
-**Core Capabilities:**
-
-- Book catalog management with rich domain models
-- Inventory tracking with reservations
-- Multi-criteria search and filtering
-- Stock level monitoring with low-stock alerts
-- Admin operations with audit trail
-
-**Key Patterns:**
-
-- Domain-Driven Design with value objects (ISBN, Money, BookId)
-- Aggregate roots with business logic (Book, Category, Inventory)
-- Factory methods for object creation
-- Repository and service layers with clear boundaries
-- Cache-aside pattern with Redis
-- Optimistic locking for concurrency
-- Modular package structure (catalog, inventory, shared)
 
 ## Architecture Overview
 
