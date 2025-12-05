@@ -18,7 +18,7 @@ services:
     networks:
       - auth-network
     healthcheck:
-      test: [ "CMD-SHELL", "pg_isready -U iqscaffold_user -d iqscaffold_user_local -h localhost" ]
+      test: ["CMD-SHELL", "pg_isready -U iqscaffold_user -d iqscaffold_user_local -h localhost"]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -52,7 +52,7 @@ services:
     networks:
       - auth-network
     healthcheck:
-      test: [ "CMD", "redis-cli", "ping" ]
+      test: ["CMD", "redis-cli", "ping"]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -131,7 +131,7 @@ services:
     networks:
       - auth-network
     healthcheck:
-      test: [ "CMD", "curl", "-f", "http://localhost:8080/actuator/health/readiness" ]
+      test: ["CMD", "curl", "-f", "http://localhost:8080/actuator/health/readiness"]
       interval: 30s
       timeout: 10s
       retries: 3

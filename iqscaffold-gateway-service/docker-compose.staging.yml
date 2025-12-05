@@ -14,7 +14,7 @@ services:
       - gateway-network-staging
     restart: unless-stopped
     healthcheck:
-      test: [ "CMD", "redis-cli", "-a", "${IQSCAFFOLD_CACHE_REDIS_PASSWORD}", "ping" ]
+      test: ["CMD", "redis-cli", "-a", "${IQSCAFFOLD_CACHE_REDIS_PASSWORD}", "ping"]
       interval: 15s
       timeout: 5s
       retries: 5
@@ -122,7 +122,7 @@ services:
       - gateway-network-staging
     restart: unless-stopped
     healthcheck:
-      test: [ "CMD", "curl", "-f", "http://localhost:8080/actuator/health/readiness" ]
+      test: ["CMD", "curl", "-f", "http://localhost:8080/actuator/health/readiness"]
       interval: 30s
       timeout: 15s
       retries: 5
