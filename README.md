@@ -1,6 +1,7 @@
 # 🚀 IQ Scaffold Microservices Platform
 
-> Production-ready Spring Boot microservices platform demonstrating modern architecture patterns, security best practices, and operational excellence for building scalable distributed systems.
+> Production-ready Spring Boot microservices platform demonstrating modern architecture patterns, security best practices, and operational excellence for building scalable distributed
+> systems.
 
 ## Business Purpose
 
@@ -11,7 +12,8 @@ A microservices ecosystem that provides:
 - **Catalog & Inventory** - Book management system demonstrating domain-driven design and inventory tracking patterns
 - **Extensible Platform** - Foundation for adding new microservices with standardized security, observability, and integration patterns
 
-This platform serves as a reference implementation for organizations building microservices architectures, showcasing production-ready patterns for authentication, API management, and business domain services.
+This platform serves as a reference implementation for organizations building microservices architectures, showcasing production-ready patterns for authentication, API management, and
+business domain services.
 
 ## Platform Services
 
